@@ -1,0 +1,18 @@
+
+body {
+    background-color: aquamarine;
+}
+
+.caixa-fora {
+    background-color: lightcoral;
+    border-style: dashed;
+    padding: 50px;
+    font-size: medium;    
+}
+
+.caixa-dentro {
+    background-color: lightyellow;
+    border-style: dashed;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
