@@ -23,9 +23,7 @@ Usadas para posicionar os elementos .fixed--pos-tl, .fixed--pos-tr, .fixed--pos-
 scroll-behavior: Ativa o scroll suave na página.
 scroll-snap-type: Habilita o "scroll snap" vertical, para uma experiência de navegação mais fluida. */
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 html {
