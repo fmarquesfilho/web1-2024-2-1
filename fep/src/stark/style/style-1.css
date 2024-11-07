@@ -1,14 +1,23 @@
 @import 'https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap';
 
+* {
+    box-sizing: border-box;
+}
+
 /* Define a fonte e a cor padrão para o texto da página */
 body {
   font-family: "Radio Canada Big", sans-serif;
   color: #10284b;
 }
 
+div {
+    border-style: dashed;
+}
+
 /* Estiliza o container principal para centralizar e ajustar o espaçamento ao redor do conteúdo */
 .middle {
-    padding-block: 4rem 10rem; /* Espaçamento superior e inferior */
+    padding-block: 4rem 10rem;
+     /* Espaçamento superior e inferior */
     padding-inline: 1.5rem; /* Espaçamento nas laterais */
 }
 
@@ -18,16 +27,15 @@ body {
 .middle__wrapper {
     display: grid;
     grid-template-columns: 17.5rem auto; /* Define largura da barra lateral e da coluna principal */
-    -moz-column-gap: 4rem; /* Espaçamento entre as colunas */
-         column-gap: 4rem;
-    max-width: 75rem; /* Largura máxima do conteúdo */
+    column-gap: 4rem;
+    max-width: 70rem; /* Largura máxima do conteúdo */
     margin-inline: auto; /* Centraliza o conteúdo */
 }
 
 /* Estiliza a barra lateral para que ela fique fixa ao rolar a página */
 .sidebar {
     position: sticky; /* Permite que a barra lateral fique fixa ao rolar */
-    top: calc(4rem + 32px + 32px); /* Define a distância do topo da tela */
+    top: 5rem; /* Define a distância do topo da tela */
     align-self: start; /* Alinha o início do conteúdo da barra lateral */
 }
 
@@ -35,8 +43,8 @@ body {
 .main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* Ajusta a largura mínima das colunas */
-    -moz-column-gap: 2rem; /* Espaçamento entre as colunas */
-         column-gap: 2rem;
+     /* Espaçamento entre as colunas */
+    column-gap: 2rem;
 }
   
 /* Define o layout do cabeçalho para organizar o título, descrição e link "view all" */
