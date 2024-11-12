@@ -10,9 +10,6 @@ body {
   color: #10284b;
 }
 
-/* div {
-    border-style: dashed;
-} */
 
 /* Estiliza o container principal para centralizar e ajustar o espaçamento ao redor do conteúdo */
 .middle {
@@ -34,13 +31,13 @@ body {
 /* Estiliza a barra lateral para que ela fique fixa ao rolar a página */
 .sidebar {
     position: sticky; /* Permite que a barra lateral fique fixa ao rolar */
-    top: 5rem; /* Define a distância do topo da tela */
+    /* top: 20rem; *//* Define a distância do topo da tela */
     align-self: start; /* Alinha o início do conteúdo da barra lateral */
 }
 
-/* p {
+/*p {
     border-style: dashed;
-} */
+}*/
 
 /* Configura o layout da área principal para exibir as colunas automaticamente */
 .main {
@@ -83,10 +80,6 @@ body {
     line-height: 1.5; /* Espaçamento entre linhas */
 }
 
-/* a {
-    border-style: dashed;
-} */
-
 /* Estiliza o link "view all" */
 .header__view-all {
     grid-row: 1; /* Coloca o link na primeira linha */
@@ -105,7 +98,7 @@ body {
 .nav {
   position: sticky; /* Mantém a barra visível no topo ao rolar a página */
   top: 0; /* Fixa a posição no topo da viewport */
-  z-index: 999; /* Garante que a barra fique acima de outros elementos na pilha */
+  z-index: 10; /* Garante que a barra fique acima de outros elementos na pilha */
   padding: 1rem; /* Adiciona espaçamento interno em todos os lados */
   color: #381fd1; /* Define a cor padrão do texto na barra */
   background-color: #f6f6eb; /* Define uma cor de fundo clara */
@@ -118,12 +111,12 @@ body {
     2rem /* Primeira coluna fixa para ícones ou espaços pequenos */
     repeat(4, auto) /* Quatro colunas de largura automática para menu ou itens */
     1fr /* Uma coluna que ocupa o espaço restante, geralmente para flexibilidade */
-    repeat(2, auto); /* Duas colunas automáticas no final, por exemplo, para ações ou botões */
+    repeat(2, auto); /* Duas colunas automáticas no final, por exemplo, para ações ou botões */ 
   gap: 1rem; /* Espaçamento entre os itens da grade */
   align-items: center; /* Centraliza verticalmente os elementos na grade */
   max-width: 60rem; /* Define a largura máxima do wrapper */
   min-height: 0.3125rem; /* Define a altura mínima do wrapper */
-  margin-inline: auto; /* Centraliza o wrapper horizontalmente na página */
+  margin-inline: auto 0; /* Centraliza o wrapper horizontalmente na página */
 }
 
 .logo {
@@ -151,14 +144,14 @@ body {
 
 /* Define a posição do menu à direita */
 .menu--pos-right {
-  grid-column: -3/-1; /* Ocupa as três últimas colunas na grade */
+  grid-column: -3/-1; /* Ocupa as duas últimas colunas na grade */
 }
 
 /* Estiliza os itens do menu */
 .menu__item {
-  display: grid; /* Exibe o item como uma grade */
   align-items: center; /* Centraliza verticalmente o conteúdo do item */
   height: 2rem; /* Define uma altura fixa para o item */
+  padding: 0.3rem;
   padding-inline: 0.5rem; /* Adiciona espaçamento interno à esquerda e à direita */
   font-size: 0.875rem; /* Define o tamanho da fonte do texto */
   font-weight: 900; /* Aplica negrito ao texto */
@@ -188,7 +181,7 @@ body {
 /***********/
 .sidebar {
   position: sticky; /* Fixa a posição enquanto o usuário rola a página, mas dentro de um contêiner pai */
-  top: calc(4rem + 32px + 32px); /* Define a distância do topo para a posição "fixa" */
+  top: calc(4rem + 64px); /* Define a distância do topo para a posição "fixa" */
   align-self: start; /* Garante que o elemento se alinhe ao início do contêiner flexível */
 }
 
@@ -234,7 +227,7 @@ body {
 .sidebar__menu__item {
   display: block; /* O item ocupa a largura total */
   padding-block: 1rem; /* Espaçamento interno vertical */
-  padding-left: 1.25rem; /* Indenta os itens do menu */
+  padding-left: 1.11rem; /* Indenta os itens do menu */
   font-weight: 600; /* Texto com destaque */
   line-height: 27.2px; /* Altura entre linhas */
   color: #4b4b4e; /* Cor padrão */
@@ -242,11 +235,6 @@ body {
 }
 .sidebar__menu__item:hover {
   color: #381fd1; /* Cor de destaque ao passar o mouse */
-}
-.sidebar__menu__item--type-btn {
-  cursor: pointer; /* Mostra o ponteiro como um botão */
-  background-color: unset; /* Remove fundo */
-  border: none; /* Remove borda */
 }
 
 .sidebar__submit {
